@@ -12,23 +12,22 @@
     Would you buy any of the following online?<br><br>
     <form id="gform" method="POST"
           action="https://script.google.com/macros/s/AKfycbx7zrLF9fZT2BI7KrGBY2TMQgN7kaOw6xr9hUjBTu2hCm_zfWk/exec">
-        <input type="checkbox" id="second-hand" name="second-hand">
-        <label for="second-hand">A 2nd hand phone</label>
+        <input type="checkbox" id="secondHand" name="secondHand">
+        <label for="secondHand">A 2nd hand phone</label>
 
         <input type="checkbox" id="contract" name="contract">
         <label for="contract">A phone on a contract</label>
 
-        <input type="checkbox" id="new-outright" name="new-outright">
-        <label for="new-outright">A new phone outright</label>
+        <input type="checkbox" id="newOutright" name="newOutright">
+        <label for="newOutright">A new phone outright</label>
 
-        <input type="checkbox" id="sim-only" name="sim-only">
-        <label for="sim-only">A sim only</label>
+        <input type="checkbox" id="simOnly" name="simOnly">
+        <label for="simOnly">A sim only</label>
 
-        <button >
-            &nbsp;Send
-        </button>
+        <button class="button is-primary">Submit</button>
     </form>
 </div>
+
 
 
 <div style="display:none;" id="thankyou_message">
@@ -38,6 +37,7 @@
 
 <!-- Submit the Form to Google Using "AJAX" -->
 <script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        src="js/form-submission-handler.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
