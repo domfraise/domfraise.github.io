@@ -3,8 +3,8 @@ function validEmail(email) { // see:
     return re.test(email);
 }
 // get all data in form and return object
-function getFormData() {
-    var elements = document.getElementById("gform").elements; // all form elements
+function getFormData(elementName) {
+    var elements = document.getElementById(elementName).elements; // all form elements
     var fields = Object.keys(elements).map(function (k) {
         if (elements[k].name !== undefined) {
             return elements[k].name;
@@ -37,7 +37,7 @@ function getFormData() {
             }
         }
     });
-    console.log(data);
+    // console.log(data);
     return data;
 }
 
@@ -48,19 +48,38 @@ function sendPhoneData(phoneFormData) {
         });
 }
 
+function sendEmailData(phoneFormData) {
+    $.post("https://script.google.com/macros/s/AKfycbyF79MWC21MIxcFxn-s9rqwLCEvQxhD_yL3TPN6Zbq1XFs8sQ0/exec",
+        phoneFormData
+        , function (data, state) {
+        });
+}
+
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
     event.preventDefault();           // we are submitting via xhr below
-    var data = getFormData();         // get the values submitted in the form
+    var data = getFormData("gform");         // get the values submitted in the form
     var url = event.target.action;  //
     link = url
-    console.log(url)
+    // console.log(url)
     sendPhoneData(data)
+}
+
+function handleFormSubmitEmails(event) {  // handles form submit withtout any jquery
+    event.preventDefault();           // we are submitting via xhr below
+    var data = getFormData("emailForm");         // get the values submitted in the form
+    var url = event.target.action;  //
+    link = url
+    // console.log(url)
+    sendEmailData(data)
 }
 
 function loaded() {
     console.log('contact form submission handler loaded successfully');
     // bind to the submit event of our form
-    var form = document.getElementById('gform');
-    form.addEventListener("submit", handleFormSubmit, false);
+    var phoneForm = document.getElementById('gform');
+    phoneForm.addEventListener("submit", handleFormSubmit, false);
+    var emailForm = document.getElementById('emailForm');
+    emailForm.addEventListener("submit", handleFormSubmitEmails, false);
+
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
