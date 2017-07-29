@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/checkbox.css">
     <title>TechIndex</title>
 </head>
 
 <nav class="navbar ">
     <div class="navbar-brand">
         <a class="navbar-item" href="http://www.techindex.net">
-            <img  src="img/techIndexLogo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+            <img src="img/techIndexLogo.png" alt="Bulma: a modern CSS framework based on Flexbox"
                  width="160" height="97">
         </a>
 
-        <a class="navbar-item is-hidden-desktop" href="https://github.com/domfraise/domfraise.githu b.io"
+        <a class="navbar-item is-hidden-desktop" href="https://github.com/domfraise/domfraise.github.io"
            target="_blank">
       <span class="icon" style="color: #333;">
         <i class="fa fa-github"></i>
@@ -30,18 +31,9 @@
         </a>
 
         <div class="navbar-burger burger" data-target="navMenuExample">
-            <span><a class="navbar-item is-active" href="http://www.techindex.net">
-                Home
-            </a></span>
-            <span><a class="navbar-item  is-active" href="">
-                Search
-            </a></span>
-            <span><a class="navbar-item is-active" href="http://www.techindex.net">
-                Prices
-            </a></span>
-            <span><a class="navbar-item is-active" href=http://www.techindex.net">
-                Reviews
-            </a></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
 
@@ -103,49 +95,71 @@
     </div>
 </section>
 
+
 <section class="section">
     <div class="columns">
-        <div class="column">
-
+        <div class="column is-4">
         </div>
-        <div class="column is-half">
-            <div class="container">
-                <h1 class="title">Subscribe to our mailing list</h1>
-                <h2 class="subtitle">
-                    Stay up to date with all things TechIndex
-                </h2>
-                <form>
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input"  placeholder="e.g Alex Smith">
-                        </div>
-                    </div>
+        <div class="column">
+            <h2 class="title is-4" style="text-align: center">Would you buy any of the following online?</h2>
+            <div class="boxes">
+                <form id="gform" method="POST"
+                      action="https://script.google.com/macros/s/AKfycbx7zrLF9fZT2BI7KrGBY2TMQgN7kaOw6xr9hUjBTu2hCm_zfWk/exec">
+                    <input type="checkbox" id="secondHand" name="secondHand">
+                    <label for="secondHand">A 2nd hand phone</label>
 
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control has-icons-left">
-                            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-                            <span class="icon is-small is-left">
-                     <i class="fa fa-envelope"></i>
-                    </span>
+                    <input type="checkbox" id="contract" name="contract">
+                    <label for="contract">A phone on a contract</label>
 
+                    <input type="checkbox" id="newOutright" name="newOutright">
+                    <label for="newOutright">A new phone outright</label>
 
-                        </div>
+                    <input type="checkbox" id="simOnly" name="simOnly">
+                    <label for="simOnly">A sim only</label>
 
-                    </div>
+                    <br><br>
                     <div align="center">
-                        <button class="button is-primary">
-                            Subscribe
-                        </button>
+                        <button class="button is-primary">Submit</button>
                     </div>
                 </form>
             </div>
-
+        </div>
+        <div class="column is-4">
         </div>
     </div>
 
+    <div class="columns">
+        <div class="column is-4">
+        </div>
+        <div class="column">
+            <h1 class="title is-4">Subscribe to our mailing list</h1>
+            <h5 class="subtitle is-6">Stay up to date with all things TechIndex</h5>
+            <form>
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" placeholder="e.g Alex Smith">
+                    </div>
+                </div>
 
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                        <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+
+                </div>
+                <div align="center">
+                    <button class="button is-primary">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="column is-4">
+        </div>
+    </div>
 </section>
 
 
@@ -165,6 +179,9 @@
 </footer>
 
 
+<script data-cfasync="false" type="text/javascript"
+        src="js/form-submission-handler.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 
 </html>
