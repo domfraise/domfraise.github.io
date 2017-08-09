@@ -1,9 +1,3 @@
----
-layout: checklist_page
-title: The Side Project Marketing Checklist
-permalink: /marketing-checklist/
----
-
 ## Pre-Launch
 
 ### Market Research
