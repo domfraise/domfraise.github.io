@@ -2,6 +2,7 @@ function validEmail(email) { // see:
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
     return re.test(email);
 }
+
 // get all data in form and return object
 function getFormData(elementName) {
     var elements = document.getElementById(elementName).elements; // all form elements
@@ -62,15 +63,19 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     link = url
     // console.log(url)
     sendPhoneData(data)
+    changeTextInElement('phoneForm', 'Thanks for your feedback!');
+    alignElement('phoneForm', 'center');
 }
 
 function handleFormSubmitEmails(event) {  // handles form submit withtout any jquery
     event.preventDefault();           // we are submitting via xhr below
     var data = getFormData("emailForm");         // get the values submitted in the form
     var url = event.target.action;  //
-    link = url
+    link = url;
     // console.log(url)
-    sendEmailData(data)
+    sendEmailData(data);
+    changeTextInElement('emailFormDiv', 'Thanks for your email, you\'ll be the first to know when we launch!');
+    alignElement('emailFormDiv', 'center');
 }
 
 function loaded() {
@@ -81,5 +86,23 @@ function loaded() {
     var emailForm = document.getElementById('emailForm');
     emailForm.addEventListener("submit", handleFormSubmitEmails, false);
 
-};
+}
+
+/**
+ * @param elementID:  id given in HTML
+ * @param text: a string which the innerHTML will change to.
+ */
+function changeTextInElement(elementID, text) {
+    document.getElementById(elementID).innerHTML = text;
+}
+
+/**
+ * @param elementID: id given in HTML
+ * @param alignment: values of {left|right|center|justify|initial|inherit}
+ */
+function alignElement(elementID, alignment) {
+    document.getElementById(elementID).style.textAlign = alignment
+}
+
+
 document.addEventListener('DOMContentLoaded', loaded, false);
