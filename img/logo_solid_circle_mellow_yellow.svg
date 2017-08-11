@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="logo_solid_inverted_circle.svg"
+   sodipodi:docname="logo_solid_circle_mellow_yellow.svg"
    inkscape:export-filename="/home/tom/domfraise.github.io/img/logo_circle.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,7 +57,7 @@
      id="layer1"
      transform="translate(-6.7556915,-3.7212906)">
     <circle
-       style="fill:#98dafc;fill-opacity:1;stroke:none;stroke-width:0.07704194;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#f7e285;fill-opacity:1;stroke:none;stroke-width:0.07704194;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4490"
        cx="39.402664"
        cy="36.368263"

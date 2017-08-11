@@ -1,279 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/checkbox.css">
-
+    <title>Tech Index | Find your phone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma-modified.css">
+    <link rel="stylesheet" href="css/techIndex.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo_circle.png">
-    <link rel="canonical" href="http://bulma.io/documentation/components/navbar/">
-    <title>Tech Index</title>
 </head>
 
 <body>
+<header class="hero is-fullheight" id="hero">
+    <div class="hero-head">
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript"> (function (d, w, c) {
-    (w[c] = w[c] || []).push(function () {
-        try {
-            w.yaCounter45472191 = new Ya.Metrika({
-                id: 45472191,
-                clickmap: true,
-                trackLinks: true,
-                accurateTrackBounce: true,
-                webvisor: true
-            });
-        } catch (e) {
-        }
-    });
-    var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
-        n.parentNode.insertBefore(s, n);
-    };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://mc.yandex.ru/metrika/watch.js";
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else {
-        f();
-    }
-})(document, window, "yandex_metrika_callbacks"); </script>
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/45472191" style="position:absolute; left:-9999px;" alt=""/></div>
-</noscript> <!-- /Yandex.Metrika counter -->
+        <header class="navbar is-uppercase under-shadow">
+            <div class="navbar-brand">
+                <a class="nav-item" href="#" title="TechIndex">
+                    <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
+                </a>
+                <a class="navbar-item twitter-hover is-hidden-desktop" href="https://twitter.com/techindexteam"
+                   target="_blank">
+                    <span class="icon twitter-hover" style="color: #55acee;"><i class="fa fa-twitter"></i></span>
+                </a>
+                <div class="navbar-burger burger" data-target="navMenuExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navMenuExample" class="navbar-menu">
+                <div class="navbar-start">
 
-<!--Google analytics-->
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                </div>
+                <div class="navbar-end">
+                    <a class="nav-item is-active" href="#">Home</a>
+                    <a class="nav-item disabled-nav">Search</a>
+                    <a class="nav-item disabled-nav">Prices</a>
+                    <a class="nav-item disabled-nav">Reviews</a>
+                    <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
+                    <span class="nav-item is-hidden-mobile">
+                        <a class="button is-primary" href="https://www.twitter.com/techindexteam">
+                            <i class="fa fa-twitter"> Twitter</i>
+                        </a>
+                    </span>
 
-    ga('create', 'UA-104396169-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
-
-
-<div class="container">
-    <nav class="navbar">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="http://techindex.net">
-                <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
-            </a>
-
-
-            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/techindexteam" target="_blank">
-      <span class="icon" style="color: #55acee;">
-        <i class="fa fa-twitter"></i>
-      </span>
-            </a>
-
-            <div class="navbar-burger burger" data-target="navMenuExample">
-                <span></span>
-                <span></span>
-                <span></span>
+                </div>
             </div>
 
-
+        </header>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="is-1 title">TechIndex</h1>
+            <h1 class="is-3 subtitle">Helping you find your perfect phone.</h1>
+            <a class="button wide-button is-primary has-margin-top" data-scroll href="#more">Scroll Down</a>
         </div>
+    </div>
+</header>
 
-        <div id="navMenuExample" class="navbar-menu" >
-            <div class="navbar-start">
-
-                <a class="navbar-item is-active" href="#">
-                    Home
-                </a>
-
-                <a class="navbar-item" style="pointer-events: none">
-                    <del>Search</del>
-                </a>
-                <a class="navbar-item" style="pointer-events: none">
-                    <del>Prices</del>
-                </a>
-                <a class="navbar-item" style="pointer-events: none">
-                    <del>Reviews</del>
-                </a>
+<section class="section is-small is-primary" id="more" data-scroll-id="more" tabindex="-1" style="outline: none">
+    <div class="container has-text-centered">
+        <div class="content is-large">
+            Find your phone quick, at the best price.
+        </div>
+        <div class="columns has-large-margin-top">
+            <div class="column">
+                <i class="fa fa-search-plus is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>Search across all platforms.</p>
+                </div>
             </div>
-
-            <div class="navbar-end">
-                <a class="navbar-item" href="https://twitter.com/techindexteam" target="_blank">
-                    Twitter
-                </a>
-                <div class="navbar-item">
-                    <div class="field is-grouped">
-                        <p class="control">
-                            <a id="twitter"
-                               class="button"
-                               data-social-network="Twitter"
-                               data-social-action="tweet"
-                               data-social-target="http://bulma.io"
-                               target="_blank"
-                               href="https://twitter.com/intent/tweet?text=@TechIndexTeam - For new and used phone comparisons. techindex.net">
-              <span class="icon">
-                <i class="fa fa-twitter"></i>
-              </span>
-                                <span>Tweet</span>
-                            </a>
-                        </p>
-
-                    </div>
+            <div class="column">
+                <i class="fa fa-area-chart is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>See trends with helpful price statistics.</p>
+                </div>
+            </div>
+            <div class="column">
+                <i class="fa fa-money is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>Buy it from the right platform, at the right time, to save your cash.</p>
                 </div>
             </div>
         </div>
-    </nav>
-</div>
-<section class="hero is-info">
-    <div class="hero-body is-info" >
-        <div class="container" align="center">
-            <h1 class="title is-1">
-                Tech Index
-
-            </h1>
-            <br>
-            <h2 class="subtitle">
-                Helping you find your perfect phone.
-            </h2>
-        </div>
+        <a class="button wide-button is-primary has-margin-top" data-scroll href="#helpUs">Help us</a>
     </div>
 </section>
 
+<section class="section is-medium is-primary" id="helpUs" data-scroll-id="helpUs" tabindex="-1" style="outline: none">
+    <div class="container has-text-centered " id="phoneForm">
+        <h2 class="title is-4">Would you buy any of the following online?</h2>
+        <div class="columns">
+            <div class="column is-4 is-offset-4">
+                <div class="content boxes has-text-left">
+                    <form id="gform" method="POST"
+                          action="https://script.google.com/macros/s/AKfycbx7zrLF9fZT2BI7KrGBY2TMQgN7kaOw6xr9hUjBTu2hCm_zfWk/exec">
+                        <input type="checkbox" id="secondHand" name="secondHand">
+                        <label for="secondHand">A 2nd hand phone</label>
 
-<section class="section">
-    <div class="columns">
-        <div class="column is-4">
-        </div>
-        <div class="column" id="phoneForm">
-            <h2 class="title is-4" style="text-align: center">Would you buy any of the following online?</h2>
-            <div class="boxes">
-                <form id="gform" method="POST"
-                      action="https://script.google.com/macros/s/AKfycbx7zrLF9fZT2BI7KrGBY2TMQgN7kaOw6xr9hUjBTu2hCm_zfWk/exec">
-                    <input type="checkbox" id="secondHand" name="secondHand">
-                    <label for="secondHand">A 2nd hand phone</label>
+                        <input type="checkbox" id="contract" name="contract">
+                        <label for="contract">A phone on a contract</label>
 
-                    <input type="checkbox" id="contract" name="contract">
-                    <label for="contract">A phone on a contract</label>
+                        <input type="checkbox" id="newOutright" name="newOutright">
+                        <label for="newOutright">A new phone outright</label>
 
-                    <input type="checkbox" id="newOutright" name="newOutright">
-                    <label for="newOutright">A new phone outright</label>
+                        <input type="checkbox" id="simOnly" name="simOnly">
+                        <label for="simOnly">A sim only</label>
 
-                    <input type="checkbox" id="simOnly" name="simOnly">
-                    <label for="simOnly">A sim only</label>
-
-                    <br><br>
-                    <!--<div align="center">-->
-                    <button class="button is-info">Submit</button>
-                    <!--</div>-->
-                </form>
+                        <br>
+                        <button class="button wide-button is-primary">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="column is-4">
-        </div>
     </div>
-
-    <div class="columns">
-        <div class="column is-4">
-        </div>
-        <div class="column" id="emailFormDiv">
-
-            <form id="emailForm" method="POST"
-                  action="https://script.google.com/macros/s/AKfycbyF79MWC21MIxcFxn-s9rqwLCEvQxhD_yL3TPN6Zbq1XFs8sQ0/exec">
-
-                <div align="center">
-                    Enter your name and email so we can notify you of our launch!<br><br>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-body">
-                        <div class="field">
-                            <p class="control is-expanded has-icons-left">
-                                <input class="input" type="text" name="name" placeholder="Name">
-                                <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
-                            </p>
-                        </div>
-                        <div class="field">
-                            <p class="control is-expanded has-icons-left has-icons-right">
-                                <input class="input" type="email" name="email" placeholder="Email">
-                                <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
-                                <!--<span class="icon is-small is-right"><i class="fa fa-check"></i></span>-->
-                            </p>
-                        </div>
-                        <div class="field">
-                            <div class="control">
-                                <button class="button is-info">
-                                    Subscribe
-                                </button>
+    <div class="container has-text-centered has-margin-top">
+        <div class="columns">
+            <div class="column is-6 is-offset-3" id="emailFormDiv">
+                <form id="emailForm" method="POST"
+                      action="https://script.google.com/macros/s/AKfycbyF79MWC21MIxcFxn-s9rqwLCEvQxhD_yL3TPN6Zbq1XFs8sQ0/exec">
+                    Enter your details so we can tell you when we launch!
+                    <div class="field is-horizontal has-margin-top">
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" name="name" placeholder="Name">
+                                    <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input" type="email" name="email" placeholder="Email">
+                                    <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button wide-button is-primary">
+                                        Subscribe
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-
-
-        </div>
-        <div class="column is-4">
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
-
 <footer class="footer">
-    <div class="container">
-        <div class="content has-text-centered">
-            <p>Contact us at <Strong>techindexteam@gmail.com</Strong></p>
+    <div class="container has-text-centered">
+        <div class="content-inverted">
+            <p class="has-margin-bottom">Contact us at <Strong>techindexteam@gmail.com</Strong></p>
 
             <div>
-                <img style="vertical-align: middle;width:50px;height:30px;" src="img/logo_solid_inverted_circle.svg"
-                     alt="Tech Index">
+                <img class="centred-img" src="img/logo_solid_circle_pearl_aqua.svg" alt="Tech Index">
                 <span style=""><strong>Tech Index</strong> &#169; 2017+</span>
             </div>
-
         </div>
+        <a class="button inverted-button has-large-margin-top" data-scroll href="#hero">Back to top</a>
     </div>
 </footer>
 
-
-<script data-cfasync="false" type="text/javascript"
-        src="js/form-submission-handler.js"></script>
+<!--Javascript files-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-
-        // Get all "navbar-burger" elements
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Check if there are any nav burgers
-        if ($navbarBurgers.length > 0) {
-
-            // Add a click event on each of them
-            $navbarBurgers.forEach(function ($el) {
-                $el.addEventListener('click', function () {
-
-                    // Get the target from the "data-target" attribute
-                    var target = $el.dataset.target;
-                    var $target = document.getElementById(target);
-
-                    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                    $el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                })
-                ;
-            });
-        }
-
-    });
-</script>
+<script src="js/indexFunctions.js"></script>
 </body>
-
 </html>
