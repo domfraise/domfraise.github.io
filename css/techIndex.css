@@ -2,6 +2,7 @@
 
 .is-icon {
     font-size: 72px;
+    color: #2d3142;
 }
 
 .has-large-margin-top {
@@ -16,28 +17,47 @@
     margin-bottom: 16px !important;
 }
 
-.content, .title, .subtitle {
-    color: #1E3231;
+/*start colours*/
+.hero, .section, .navbar, .inverted-button {
+    background-color: #fafafa;
 }
 
-.content-inverted {
-    background-color: #485665;
-    color: #EAE6D5;
+.content, .title, .subtitle, .hero, .section, .navbar, .inverted-button {
+    color: #2d3142;
 }
 
-.hero, .section, .navbar {
-    background-color: #EAE6D5;
-    color: #1E3231;
+.dark-section {
+    background-color: #eaeaea;
 }
+
+.footer, .content-inverted {
+    background-color: #2d3142;
+    color: #fafafa;
+}
+
+strong {
+    color: #fafafa;
+    font-weight: bold;
+}
+
+.twitter-hover:hover, .navbar-burger:hover {
+    background-color: #ffffff !important;
+}
+
+.under-shadow {
+    box-shadow: 0 1px 0 rgb(116, 125, 118) !important;
+}
+
+/*end colours*/
 
 .button {
     box-shadow: 0 3px 5px rgba(30, 50, 49, .4);
     text-transform: capitalize;
+    font-weight: bold;
     border-radius: 0;
 }
 
 .inverted-button {
-    background-color: #EAE6D5;
     box-shadow: 0 3px 8px rgba(46, 53, 50, 0.2);
     border-radius: 10px;
 }
@@ -53,36 +73,14 @@
     text-decoration: line-through;
 }
 
-.under-shadow {
-    box-shadow: 0 1px 0 rgb(116, 125, 118) !important;
-}
-
-.footer {
-    background-color: #485665;
-    color: #EAE6D5;
-}
-
 .centred-img {
     vertical-align: middle;
     width: 50px;
     height: 30px;
 }
 
-.navbar-burger:hover {
-    background-color: #f4eed8;
-}
-
-.twitter-hover:hover {
-    background-color: #f4eed8 !important;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
-}
-
-strong {
-    color: #EAE6D5;
-    font-weight: bold;
 }
 
 /*Page styles*/
