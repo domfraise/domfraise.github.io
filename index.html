@@ -14,36 +14,47 @@
 </head>
 
 <body>
-<header class="hero is-fullheight" id="hero">
+<header class="hero is-fullheight" align="center" id="hero">
     <div class="hero-head">
-        <header class="nav is-uppercase under-shadow">
-            <div class="container">
-                <div class="nav-left">
+
+        <header class="navbar is-uppercase under-shadow">
+
+                <div class="navbar-brand">
                     <a class="nav-item" href="#" title="TechIndex">
                         <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
                     </a>
-                </div>
-                <div class="nav-right nav-menu">
-                    <a class="navbar-item is-hidden-desktop" href="https://twitter.com/techindexteam" target="_blank">
-                        <span class="icon" style="color: #55acee;"><i class="fa fa-twitter"></i></span>
-                    </a>
-                    <a class="nav-item is-active" href="#">Home</a>
-                    <a class="nav-item disabled-nav">Search</a>
-                    <a class="nav-item disabled-nav">Prices</a>
-                    <a class="nav-item disabled-nav">Reviews</a>
-                    <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
-                    <span class="nav-item">
-                        <a class="button is-primary" href="https://www.twitter.com/techindexteam">
-                            <i class="fa fa-twitter"> Twitter</i>
-                        </a>
-                    </span>
+                    <!--<a class="navbar-item is-hidden-desktop" href="https://twitter.com/techindexteam"-->
+                       <!--target="_blank">-->
+                        <!--<span class="icon" style="color: #55acee;"><i class="fa fa-twitter"></i></span>-->
+                    <!--</a>-->
+
                     <div class="navbar-burger burger" data-target="navMenuExample">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
+
+
                 </div>
-            </div>
+                <div id="navMenuExample" class="navbar-menu">
+                    <div  class="navbar-start">
+
+                    </div>
+                    <div class="navbar-end">
+                        <a class="nav-item is-active" href="#">Home</a>
+                        <a class="nav-item disabled-nav">Search</a>
+                        <a class="nav-item disabled-nav">Prices</a>
+                        <a class="nav-item disabled-nav">Reviews</a>
+                        <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
+                        <span class="nav-item is-hidden-mobile">
+                        <a class="button is-primary" href="https://www.twitter.com/techindexteam">
+                            <i class="fa fa-twitter"> Twitter</i>
+                        </a>
+                    </span>
+
+                    </div>
+                </div>
+
         </header>
     </div>
     <div class="hero-body">
@@ -162,33 +173,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/indexFunctions.js"></script>
 <script src="js/indexFunctions.js"></script>
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
+<script type="text/javascript">document.addEventListener('DOMContentLoaded', buildNavBurgerMenu()); </script>
 
-        // Get all "navbar-burger" elements
-        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-        // Check if there are any nav burgers
-        if ($navbarBurgers.length > 0) {
-
-            // Add a click event on each of them
-            $navbarBurgers.forEach(function ($el) {
-                $el.addEventListener('click', function () {
-
-                    // Get the target from the "data-target" attribute
-                    var target = $el.dataset.target;
-                    var $target = document.getElementById(target);
-
-                    // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                    $el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-
-                })
-                ;
-            });
-        }
-
-    });
-</script>
 </body>
 </html>
