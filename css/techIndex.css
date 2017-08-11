@@ -18,7 +18,7 @@
 }
 
 /*start colours*/
-.hero, .section, .navbar, .inverted-button {
+.hero, .section, .inverted-button {
     background-color: #fafafa;
 }
 
@@ -26,7 +26,7 @@
     color: #2d3142;
 }
 
-.dark-section {
+.dark-section, .navbar {
     background-color: #eaeaea;
 }
 
@@ -41,11 +41,11 @@ strong {
 }
 
 .twitter-hover:hover, .navbar-burger:hover {
-    background-color: #ffffff !important;
+    background-color: #dbdbdb !important;
 }
 
 .under-shadow {
-    box-shadow: 0 1px 0 rgb(116, 125, 118) !important;
+    box-shadow: 0 1px 0 #DBDBDB !important;
 }
 
 /*end colours*/
