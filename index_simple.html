@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Index | Find your phone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">-->
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/techIndex.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo_circle.png">
+</head>
+
+<body>
+<header class="hero is-fullheight" id="hero">
+    <div class="hero-head">
+        <header class="nav is-uppercase under-shadow">
+            <div class="container">
+                <div class="nav-left">
+                    <a class="nav-item" href="#" title="TechIndex">
+                        <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
+                    </a>
+                </div>
+                <div class="nav-right nav-menu">
+                    <a class="nav-item active" href="#">Home</a>
+                    <a class="nav-item disabled-nav">Search</a>
+                    <a class="nav-item disabled-nav">Prices</a>
+                    <a class="nav-item disabled-nav">Reviews</a>
+                    <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
+                    <span class="nav-item">
+                        <a class="button is-primary" href="#">
+                            <i class="fa fa-twitter"> Twitter</i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="is-1 title">TechIndex</h1>
+            <h1 class="is-3 subtitle">Helping you find your perfect phone.</h1>
+            <a class="button wide-button is-primary has-margin-top" data-scroll href="#more">more</a>
+        </div>
+    </div>
+</header>
+
+<section class="section is-small is-primary" id="more" data-scroll-id="more" tabindex="-1" style="outline: none">
+    <div class="container has-text-centered">
+        <div class="content is-large">
+            Find your phone quick, at the best price.
+        </div>
+        <div class="columns has-large-margin-top">
+            <div class="column">
+                <i class="fa fa-search-plus is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>Search across all platforms.</p>
+                </div>
+            </div>
+            <div class="column">
+                <i class="fa fa-area-chart is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>See trends with helpful price statistics.</p>
+                </div>
+            </div>
+            <div class="column">
+                <i class="fa fa-money is-icon"></i>
+                <div class="content has-margin-top is-medium">
+                    <p>Buy it from the right platform, at the right time, to save your cash.</p>
+                </div>
+            </div>
+        </div>
+        <a class="button wide-button is-primary has-margin-top" data-scroll href="#helpUs">Help us</a>
+    </div>
+</section>
+
+<section class="section is-medium is-primary" id="helpUs" data-scroll-id="helpUs" tabindex="-1" style="outline: none">
+    <div class="container has-text-centered " id="phoneForm">
+        <h2 class="title is-4">Would you buy any of the following online?</h2>
+        <div class="columns">
+            <div class="column is-4 is-offset-4">
+                <div class="content boxes has-text-left">
+                    <form id="gform" method="POST"
+                          action="https://script.google.com/macros/s/AKfycbx7zrLF9fZT2BI7KrGBY2TMQgN7kaOw6xr9hUjBTu2hCm_zfWk/exec">
+                        <input type="checkbox" id="secondHand" name="secondHand">
+                        <label for="secondHand">A 2nd hand phone</label>
+
+                        <input type="checkbox" id="contract" name="contract">
+                        <label for="contract">A phone on a contract</label>
+
+                        <input type="checkbox" id="newOutright" name="newOutright">
+                        <label for="newOutright">A new phone outright</label>
+
+                        <input type="checkbox" id="simOnly" name="simOnly">
+                        <label for="simOnly">A sim only</label>
+
+                        <br>
+                        <button class="button wide-button is-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container has-text-centered has-margin-top">
+        <div class="columns">
+            <div class="column is-6 is-offset-3" id="emailFormDiv">
+                <form id="emailForm" method="POST"
+                      action="https://script.google.com/macros/s/AKfycbyF79MWC21MIxcFxn-s9rqwLCEvQxhD_yL3TPN6Zbq1XFs8sQ0/exec">
+                    Enter your details so we can tell you when we launch!
+                    <div class="field is-horizontal has-margin-top">
+                        <div class="field-body">
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left">
+                                    <input class="input" type="text" name="name" placeholder="Name">
+                                    <span class="icon is-small is-left"><i class="fa fa-user"></i></span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <p class="control is-expanded has-icons-left has-icons-right">
+                                    <input class="input" type="email" name="email" placeholder="Email">
+                                    <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                                </p>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button wide-button is-primary">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container has-text-centered">
+        <div class="content-inverted is-medium">
+            <p>Contact us at <Strong>techindexteam@gmail.com</Strong></p>
+
+            <div>
+                <img class="centred-img" src="img/logo_solid_circle_pearl_aqua.svg" alt="Tech Index">
+                <span style=""><strong>Tech Index</strong> &#169; 2017+</span>
+            </div>
+        </div>
+        <a class="button inverted-button has-margin-top" data-scroll href="#hero">Back to top</a>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/indexFunctions.js"></script>
+<script src="js/form-submission-handler.js"></script>
+</body>
+</html>

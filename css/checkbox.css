@@ -5,19 +5,9 @@ html {
     height: 100%;
 }
 
-/*body {*/
-    /*height: 100%;*/
-    /*margin: 0;*/
-    /*background: #FEFFF1;*/
-    /*display: -webkit-flex;*/
-    /*display: flex;*/
-    /*align-items: center;*/
-/*}*/
-
 .boxes {
     margin: auto;
     padding: 50px;
-    background: #ffffff;
 }
 
 /*Checkboxes styles*/
@@ -31,7 +21,7 @@ input[type="checkbox"] + label {
     padding-left: 35px;
     margin-bottom: 20px;
     font: 14px/20px 'Open Sans', Arial, sans-serif;
-    color: #2E2E2E;
+    color: #312c32;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -47,7 +37,7 @@ input[type="checkbox"] + label:before {
     display: block;
     width: 20px;
     height: 20px;
-    border: 1px solid #2E2E2E;
+    border: 1px solid #312c32;
     position: absolute;
     left: 0;
     top: 0;
@@ -67,3 +57,6 @@ input[type="checkbox"]:checked + label:before {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+
+

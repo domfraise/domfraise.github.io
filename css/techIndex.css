@@ -1,0 +1,73 @@
+.is-icon {
+    font-size: 72px;
+}
+
+.has-large-margin-top {
+    margin-top: 48px !important;
+}
+
+.has-margin-top {
+    margin-top: 16px !important;
+}
+
+.content, .title, .subtitle {
+    color: #1E3231;
+}
+
+.content-inverted {
+    background-color: #485665;
+    color: #EAE6D5;
+}
+
+.hero, .section {
+    background-color: #EAE6D5;
+    color: #1E3231;
+}
+
+.button {
+    box-shadow: 0 3px 5px rgba(30, 50, 49, .4);
+    text-transform: capitalize;
+    border-radius: 0;
+}
+
+
+.inverted-button {
+    background-color: #EAE6D5;
+    box-shadow: 0 3px 8px rgba(46, 53, 50, 0.2);
+    border-radius: 10px;
+}
+
+.wide-button {
+    padding-left: 32px;
+    padding-right: 32px;
+    text-transform: uppercase;
+}
+
+.disabled-nav {
+    pointer-events: none;
+    text-decoration: line-through;
+}
+
+.under-shadow {
+    box-shadow: 0 1px 0 rgb(116, 125, 118) !important;
+}
+
+.footer {
+    background-color: #485665;
+    color: #EAE6D5;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.centred-img {
+    vertical-align: middle;
+    width: 50px;
+    height: 30px;
+}
+
+strong {
+    color: #EAE6D5;
+    font-weight: bold;
+}
