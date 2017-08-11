@@ -5,55 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tech Index | Find your phone</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">-->
-    <link rel="stylesheet" href="css/output.css">
-    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/bulma-modified.css">
     <link rel="stylesheet" href="css/techIndex.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo_circle.png">
 </head>
 
 <body>
-<header class="hero is-fullheight" align="center" id="hero">
+<header class="hero is-fullheight" id="hero">
     <div class="hero-head">
 
         <header class="navbar is-uppercase under-shadow">
-
-                <div class="navbar-brand">
-                    <a class="nav-item" href="#" title="TechIndex">
-                        <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
-                    </a>
-                    <!--<a class="navbar-item is-hidden-desktop" href="https://twitter.com/techindexteam"-->
-                       <!--target="_blank">-->
-                        <!--<span class="icon" style="color: #55acee;"><i class="fa fa-twitter"></i></span>-->
-                    <!--</a>-->
-
-                    <div class="navbar-burger burger" data-target="navMenuExample">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
+            <div class="navbar-brand">
+                <a class="nav-item" href="#" title="TechIndex">
+                    <img src="img/logo_solid.svg" alt="Tech Index" width="50" height="100">
+                </a>
+                <a class="navbar-item twitter-hover is-hidden-desktop" href="https://twitter.com/techindexteam"
+                   target="_blank">
+                    <span class="icon twitter-hover" style="color: #55acee;"><i class="fa fa-twitter"></i></span>
+                </a>
+                <div class="navbar-burger burger" data-target="navMenuExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navMenuExample" class="navbar-menu">
+                <div class="navbar-start">
 
                 </div>
-                <div id="navMenuExample" class="navbar-menu">
-                    <div  class="navbar-start">
-
-                    </div>
-                    <div class="navbar-end">
-                        <a class="nav-item is-active" href="#">Home</a>
-                        <a class="nav-item disabled-nav">Search</a>
-                        <a class="nav-item disabled-nav">Prices</a>
-                        <a class="nav-item disabled-nav">Reviews</a>
-                        <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
-                        <span class="nav-item is-hidden-mobile">
+                <div class="navbar-end">
+                    <a class="nav-item is-active" href="#">Home</a>
+                    <a class="nav-item disabled-nav">Search</a>
+                    <a class="nav-item disabled-nav">Prices</a>
+                    <a class="nav-item disabled-nav">Reviews</a>
+                    <a class="nav-item" data-scroll href="#helpUs">Help Us</a>
+                    <span class="nav-item is-hidden-mobile">
                         <a class="button is-primary" href="https://www.twitter.com/techindexteam">
                             <i class="fa fa-twitter"> Twitter</i>
                         </a>
                     </span>
 
-                    </div>
                 </div>
+            </div>
 
         </header>
     </div>
@@ -170,10 +164,9 @@
         <a class="button inverted-button has-large-margin-top" data-scroll href="#hero">Back to top</a>
     </div>
 </footer>
+
+<!--Javascript files-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/indexFunctions.js"></script>
-<script src="js/indexFunctions.js"></script>
-<script type="text/javascript">document.addEventListener('DOMContentLoaded', buildNavBurgerMenu()); </script>
-
 </body>
 </html>
